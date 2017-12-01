@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ServidorTsi2</groupId>
+  <artifactId>ServidorTsi2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+   <properties>
+	 <hibernate.version>4.2.15.Final</hibernate.version>
+	 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>antlr</groupId>
+      <artifactId>antlr</artifactId>
+      <version>2.7.7</version>
+   </dependency>
+   <dependency>
+     <groupId>dom4j</groupId>
+     <artifactId>dom4j</artifactId>
+     <version>1.6.1</version>
+     <scope>provided</scope>
+   </dependency>
+   
+   <dependency>
+	    <groupId>javax.ejb</groupId>
+	    <artifactId>javax.ejb-api</artifactId>
+	    <version>3.2</version>
+	</dependency>
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxb-provider</artifactId>
+      <version>3.0.16.Final</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.1.4</version><!--$NO-MVN-MAN-VER$-->
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+	   <groupId>org.hibernate</groupId>
+	   <artifactId>hibernate-entitymanager</artifactId>
+	   <version>${hibernate.version}</version>
+	   <scope>provided</scope>
+	</dependency>
+  </dependencies>
+</project>
