@@ -10,9 +10,9 @@
       <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.show_sql" value="true"/>
       <property name="hibernate.hbm2ddl.auto" value="create"/>
-      <property name="hibernate.connection.username" value="postgres"/>
-      <property name="hibernate.connection.password" value="12345"/>
-      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/prueba"/>
+      <property name="hibernate.connection.username" value="tsi2User"/>
+      <property name="hibernate.connection.password" value="postgres"/>
+      <property name="hibernate.connection.url" value="jdbc:postgresql://instanciatsi2.cxz1avx9w54t.us-east-1.rds.amazonaws.com:5432/prueba"/>
       <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
       <property name="hibernate.integration.envers.enabled" value="false"/>
     </properties>
